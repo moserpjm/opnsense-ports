@@ -26,3 +26,30 @@
 -	return os.Getenv(envDisableCustomRouting) == "true"
 +	return true
  }
+--- client/internal/dns/server_unix.go
++++ client/internal/dns/server_unix.go
+@@ -3,5 +3,5 @@
+ package dns
+ 
+ func (s *DefaultServer) initialize() (manager hostManager, err error) {
+-       return newHostManager(s.wgInterface.Name())
++       return newNoopHostMocker(), nil
+ }
+--- client/internal/engine.go
++++ client/internal/engine.go
+@@ -737,10 +737,10 @@
+ 		return nil
+ 	}
+ 
+-	protoRoutes := networkMap.GetRoutes()
+-	if protoRoutes == nil {
+-		protoRoutes = []*mgmProto.Route{}
+-	}
++	//protoRoutes := networkMap.GetRoutes()
++	//if protoRoutes == nil {
++	protoRoutes := []*mgmProto.Route{}
++	//}
+ 
+ 	_, clientRoutes, err := e.routeManager.UpdateRoutes(serial, toRoutes(protoRoutes))
+ 	if err != nil {
+
