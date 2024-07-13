@@ -14,8 +14,6 @@ LICENSE_FILE=   ${WRKSRC}/LICENSE
 
 USES=		go:1.22,modules
 
-#GOAMD64=v4
-
 GO_MODULE=	github.com/netbirdio/netbird
 
 USE_RC_SUBR=	netbird
