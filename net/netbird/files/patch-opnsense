@@ -8,24 +8,8 @@
 +		GoOS:               "linux",
  		Kernel:             osInfo[0],
  		Platform:           runtime.GOARCH,
- 		OS:                 osName,
---- util/net/net.go
-+++ util/net/net.go
-@@ -2,7 +2,6 @@ package net
- 
- import (
- 	"net"
--	"os"
- 
- 	"github.com/netbirdio/netbird/iface/netstack"
- 
-@@ -32,5 +31,5 @@ func CustomRoutingDisabled() bool {
- 	if netstack.IsEnabled() {
- 		return true
- 	}
--	return os.Getenv(envDisableCustomRouting) == "true"
-+	return true
- }
+-               OS:                 osName,
++               OS:                 strings.Replace(osName, "FreeBSD", "FakeBSD", -1),
 --- client/internal/dns/server_unix.go
 +++ client/internal/dns/server_unix.go
 @@ -3,5 +3,5 @@
@@ -35,21 +19,3 @@
 -       return newHostManager(s.wgInterface.Name())
 +       return newNoopHostMocker(), nil
  }
---- client/internal/engine.go
-+++ client/internal/engine.go
-@@ -737,10 +737,10 @@
- 		return nil
- 	}
- 
--	protoRoutes := networkMap.GetRoutes()
--	if protoRoutes == nil {
--		protoRoutes = []*mgmProto.Route{}
--	}
-+	//protoRoutes := networkMap.GetRoutes()
-+	//if protoRoutes == nil {
-+	protoRoutes := []*mgmProto.Route{}
-+	//}
- 
- 	_, clientRoutes, err := e.routeManager.UpdateRoutes(serial, toRoutes(protoRoutes))
- 	if err != nil {
-
