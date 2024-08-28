@@ -19,3 +19,35 @@
 -       return newHostManager(s.wgInterface.Name())
 +       return newNoopHostMocker(), nil
  }
+--- client/internal/routemanager/manager.go
++++ client/internal/routemanager/manager.go
+@@ -7,6 +7,7 @@
+ 	"net"
+ 	"net/netip"
+ 	"net/url"
++	"os"
+ 	"runtime"
+ 	"sync"
+ 	"time"
+@@ -293,13 +294,15 @@
+ 		}
+ 	}
+ 
+-	for _, newRoute := range newRoutes {
+-		haID := newRoute.GetHAUniqueID()
+-		if !ownNetworkIDs[haID] {
+-			if !isRouteSupported(newRoute) {
+-				continue
+-			}
+-			newClientRoutesIDMap[haID] = append(newClientRoutesIDMap[haID], newRoute)
++	if os.Getenv("NB_DISABLE_CLIENT_ROUTES") != "true" {
++		for _, newRoute := range newRoutes {
++			haID := newRoute.GetHAUniqueID()
++			if !ownNetworkIDs[haID] {
++				if !isRouteSupported(newRoute) {
++					continue
++				}
++				newClientRoutesIDMap[haID] = append(newClientRoutesIDMap[haID], newRoute)
++			}
+ 		}
+ 	}

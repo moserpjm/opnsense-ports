@@ -1,5 +1,5 @@
-TIMESTAMP = 1724255324
-SHA256 (go/net_netbird/netbird-v0.28.8/v0.28.8.mod) = 4bd5605052bb4cdfb11446e8a82911a9f8454b26c06b34d24df685fe5851be4c
-SIZE (go/net_netbird/netbird-v0.28.8/v0.28.8.mod) = 10090
-SHA256 (go/net_netbird/netbird-v0.28.8/v0.28.8.zip) = 45e575ae4569ba0fa1c28cb4aa5b8d30f2cafc4cc9a05fdba853e162a81c48fc
-SIZE (go/net_netbird/netbird-v0.28.8/v0.28.8.zip) = 2115035
+TIMESTAMP = 1724801261
+SHA256 (go/net_netbird/netbird-v0.28.9/v0.28.9.mod) = d6e55c377eaa8bffaf38d73ffdf977679b65598205611fca729d3a5d08f12c10
+SIZE (go/net_netbird/netbird-v0.28.9/v0.28.9.mod) = 10090
+SHA256 (go/net_netbird/netbird-v0.28.9/v0.28.9.zip) = e635ebe9ba13cc821f3dc5ed8feba8be7f8e7707143d08b206cbfbc75fa89f23
+SIZE (go/net_netbird/netbird-v0.28.9/v0.28.9.zip) = 2115990
