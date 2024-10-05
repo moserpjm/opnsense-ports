@@ -26,6 +26,7 @@
 %%DATADIR%%/bin/FluentMigrator.dll
 %%DATADIR%%/bin/FluentValidation.dll
 %%DATADIR%%/bin/ICSharpCode.SharpZipLib.dll
+%%DATADIR%%/bin/IPAddressRange.dll
 %%DATADIR%%/bin/ImpromptuInterface.dll
 %%DATADIR%%/bin/LICENSE
 %%DATADIR%%/bin/Localization/Core/ar.json
@@ -221,6 +222,7 @@
 %%DATADIR%%/bin/Mono.Posix.NETStandard.dll
 %%DATADIR%%/bin/MonoTorrent.dll
 %%DATADIR%%/bin/NLog.Extensions.Logging.dll
+%%DATADIR%%/bin/NLog.Layouts.ClefJsonLayout.dll
 %%DATADIR%%/bin/NLog.Targets.Syslog.dll
 %%DATADIR%%/bin/NLog.dll
 %%DATADIR%%/bin/Newtonsoft.Json.dll
@@ -440,13 +442,13 @@
 %%DATADIR%%/bin/System.Xml.XmlSerializer.dll
 %%DATADIR%%/bin/System.Xml.dll
 %%DATADIR%%/bin/System.dll
-%%DATADIR%%/bin/UI/727-323d0884f0fdc55c94f9.js
-%%DATADIR%%/bin/UI/727-323d0884f0fdc55c94f9.js.LICENSE.txt
-%%DATADIR%%/bin/UI/727-323d0884f0fdc55c94f9.js.map
-%%DATADIR%%/bin/UI/86-fd6e1f2fac0155f75f7d.js
-%%DATADIR%%/bin/UI/86-fd6e1f2fac0155f75f7d.js.map
-%%DATADIR%%/bin/UI/Content/86-500da0b4f4d5b4d2c0f7.css
-%%DATADIR%%/bin/UI/Content/86-500da0b4f4d5b4d2c0f7.css.map
+%%DATADIR%%/bin/UI/454-f5d95aee3124ae97cfe9.js
+%%DATADIR%%/bin/UI/454-f5d95aee3124ae97cfe9.js.map
+%%DATADIR%%/bin/UI/727-3b244ae63f26cf444938.js
+%%DATADIR%%/bin/UI/727-3b244ae63f26cf444938.js.LICENSE.txt
+%%DATADIR%%/bin/UI/727-3b244ae63f26cf444938.js.map
+%%DATADIR%%/bin/UI/Content/454-9da22ff79ca194375dcb.css
+%%DATADIR%%/bin/UI/Content/454-9da22ff79ca194375dcb.css.map
 %%DATADIR%%/bin/UI/Content/Fonts/Roboto-Light.ttf
 %%DATADIR%%/bin/UI/Content/Fonts/Roboto-Light.woff
 %%DATADIR%%/bin/UI/Content/Fonts/Roboto-Light.woff2
@@ -488,8 +490,8 @@
 %%DATADIR%%/bin/UI/Content/robots.txt
 %%DATADIR%%/bin/UI/Content/styles.css
 %%DATADIR%%/bin/UI/Content/styles.css.map
-%%DATADIR%%/bin/UI/index-170b86db5a7b7dc57633.js
-%%DATADIR%%/bin/UI/index-170b86db5a7b7dc57633.js.map
+%%DATADIR%%/bin/UI/index-9796943a11fd43af27a5.js
+%%DATADIR%%/bin/UI/index-9796943a11fd43af27a5.js.map
 %%DATADIR%%/bin/UI/index.html
 %%DATADIR%%/bin/UI/login.html
 %%DATADIR%%/bin/UI/oauth.html

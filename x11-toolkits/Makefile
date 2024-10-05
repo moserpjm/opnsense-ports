@@ -4,6 +4,7 @@
     SUBDIR += Xaw3d
     SUBDIR += Xmt
     SUBDIR += amtk
+    SUBDIR += aquamarine
     SUBDIR += blt
     SUBDIR += bwidget
     SUBDIR += color-widgets-qt5
@@ -23,6 +24,8 @@
     SUBDIR += granite7
     SUBDIR += gstreamer1-plugins-gtk
     SUBDIR += gstreamer1-plugins-pango
+    SUBDIR += gstreamer1-plugins-qt5
+    SUBDIR += gstreamer1-plugins-qt6
     SUBDIR += gtk-layer-shell
     SUBDIR += gtk-session-lock
     SUBDIR += gtk-sharp-beans
@@ -87,6 +90,7 @@
     SUBDIR += libhandy
     SUBDIR += libhandy0
     SUBDIR += libshumate
+    SUBDIR += libspelling
     SUBDIR += libunique3
     SUBDIR += libwnck
     SUBDIR += libwnck3
@@ -166,6 +170,7 @@
     SUBDIR += py-AnyQt
     SUBDIR += py-Pmw
     SUBDIR += py-awesometkinter
+    SUBDIR += py-customtkinter
     SUBDIR += py-easygui
     SUBDIR += py-fltk
     SUBDIR += py-guietta
@@ -173,6 +178,7 @@
     SUBDIR += py-qt5-chart
     SUBDIR += py-qt6-chart
     SUBDIR += py-qt6-datavis3d
+    SUBDIR += py-superqt
     SUBDIR += py-tkinter
     SUBDIR += py-tktreectrl
     SUBDIR += py-wxPython4
@@ -245,7 +251,6 @@
     SUBDIR += vte
     SUBDIR += vte3
     SUBDIR += wlroots
-    SUBDIR += wlroots-hyprland
     SUBDIR += wlroots015
     SUBDIR += wlroots016
     SUBDIR += wlroots017

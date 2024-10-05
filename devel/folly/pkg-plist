@@ -112,6 +112,10 @@ include/folly/Varint.h
 include/folly/VirtualExecutor.h
 include/folly/algorithm/simd/FindFixed.h
 include/folly/algorithm/simd/Movemask.h
+include/folly/algorithm/simd/detail/SimdAnyOf.h
+include/folly/algorithm/simd/detail/SimdCharPlatform.h
+include/folly/algorithm/simd/detail/SimdForEach.h
+include/folly/algorithm/simd/detail/UnrollUtils.h
 include/folly/base64.h
 include/folly/channels/Channel-fwd.h
 include/folly/channels/Channel-inl.h
@@ -225,6 +229,7 @@ include/folly/container/heap_vector_types.h
 include/folly/container/range_traits.h
 include/folly/container/small_vector.h
 include/folly/container/sorted_vector_types.h
+include/folly/container/span.h
 include/folly/container/tape.h
 include/folly/container/test/F14TestUtil.h
 include/folly/container/test/TrackingTypes.h
@@ -332,9 +337,6 @@ include/folly/detail/PerfScoped.h
 include/folly/detail/PolyDetail.h
 include/folly/detail/RangeCommon.h
 include/folly/detail/RangeSse42.h
-include/folly/detail/SimdAnyOf.h
-include/folly/detail/SimdCharPlatform.h
-include/folly/detail/SimdForEach.h
 include/folly/detail/SimpleSimdStringUtils.h
 include/folly/detail/SimpleSimdStringUtilsImpl.h
 include/folly/detail/Singleton.h
@@ -349,7 +351,6 @@ include/folly/detail/TrapOnAvx512.h
 include/folly/detail/TurnSequencer.h
 include/folly/detail/TypeList.h
 include/folly/detail/UniqueInstance.h
-include/folly/detail/UnrollUtils.h
 include/folly/detail/base64_detail/Base64Api.h
 include/folly/detail/base64_detail/Base64Common.h
 include/folly/detail/base64_detail/Base64Constants.h
@@ -420,7 +421,6 @@ include/folly/experimental/ExecutionObserver.h
 include/folly/experimental/FlatCombiningPriorityQueue.h
 include/folly/experimental/FunctionScheduler.h
 include/folly/experimental/Instructions.h
-include/folly/experimental/JSONSchema.h
 include/folly/experimental/LockFreeRingBuffer.h
 include/folly/experimental/NestedCommandLineApp.h
 include/folly/experimental/PrimaryPtr.h
@@ -693,6 +693,7 @@ include/folly/hash/MurmurHash.h
 include/folly/hash/SpookyHashV1.h
 include/folly/hash/SpookyHashV2.h
 include/folly/hash/detail/ChecksumDetail.h
+include/folly/hash/traits.h
 include/folly/init/Init.h
 include/folly/init/Phase.h
 include/folly/io/Cursor-inl.h
@@ -1041,7 +1042,6 @@ include/folly/synchronization/SanitizeThread.h
 include/folly/synchronization/SaturatingSemaphore.h
 include/folly/synchronization/SmallLocks.h
 include/folly/synchronization/ThrottledLifoSem.h
-include/folly/synchronization/Utility.h
 include/folly/synchronization/WaitOptions.h
 include/folly/synchronization/detail/AtomicUtils.h
 include/folly/synchronization/detail/Hardware.h

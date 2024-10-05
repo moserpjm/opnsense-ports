@@ -12,9 +12,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	ca_root_nss>0:security/ca_root_nss
 
-GOAMD64=v4
-
-USES=		go:1.22,modules
+USES=		go:1.23,modules
 
 GO_MODULE=	github.com/tailscale/tailscale
 

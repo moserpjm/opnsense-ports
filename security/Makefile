@@ -150,6 +150,7 @@
     SUBDIR += enchive
     SUBDIR += eschalot
     SUBDIR += expiretable
+    SUBDIR += exploit-pattern
     SUBDIR += fakeident
     SUBDIR += fakeroot
     SUBDIR += farmhash
@@ -280,6 +281,7 @@
     SUBDIR += lasso
     SUBDIR += lastpass-cli
     SUBDIR += lego
+    SUBDIR += libaegis
     SUBDIR += libargon2
     SUBDIR += libassuan
     SUBDIR += libcaes
@@ -293,6 +295,7 @@
     SUBDIR += libgpg-error
     SUBDIR += libgsasl
     SUBDIR += libhijack
+    SUBDIR += libhydrogen
     SUBDIR += libident
     SUBDIR += libkleo
     SUBDIR += libkpass
@@ -377,6 +380,7 @@
     SUBDIR += masscan
     SUBDIR += mate-pam-helper
     SUBDIR += mbedtls
+    SUBDIR += mbedtls3
     SUBDIR += mcrypt
     SUBDIR += md5deep
     SUBDIR += medusa
@@ -423,6 +427,7 @@
     SUBDIR += olm
     SUBDIR += onionscan
     SUBDIR += op
+    SUBDIR += openbao
     SUBDIR += openbsm
     SUBDIR += openca-ocspd
     SUBDIR += openconnect
@@ -824,6 +829,8 @@
     SUBDIR += php82-sodium
     SUBDIR += php83-filter
     SUBDIR += php83-sodium
+    SUBDIR += php84-filter
+    SUBDIR += php84-sodium
     SUBDIR += picocrypt
     SUBDIR += picosha2
     SUBDIR += pidgin-encryption
@@ -978,6 +985,7 @@
     SUBDIR += py-msoffcrypto-tool
     SUBDIR += py-muacrypt
     SUBDIR += py-netbox-secrets
+    SUBDIR += py-nethsm
     SUBDIR += py-netmiko
     SUBDIR += py-noiseprotocol
     SUBDIR += py-notus-scanner
@@ -1084,6 +1092,7 @@
     SUBDIR += py-zope.password
     SUBDIR += py-zxcvbn
     SUBDIR += pygost
+    SUBDIR += qt-sudo
     SUBDIR += qtkeychain
     SUBDIR += quantis-kmod
     SUBDIR += racoon2
@@ -1111,6 +1120,7 @@
     SUBDIR += rubygem-bcrypt
     SUBDIR += rubygem-bcrypt-ruby
     SUBDIR += rubygem-bcrypt_pbkdf
+    SUBDIR += rubygem-brakeman
     SUBDIR += rubygem-cancancan
     SUBDIR += rubygem-cose
     SUBDIR += rubygem-cvss-suite
@@ -1124,6 +1134,7 @@
     SUBDIR += rubygem-digest
     SUBDIR += rubygem-digest-crc
     SUBDIR += rubygem-doorkeeper
+    SUBDIR += rubygem-doorkeeper-device_authorization_grant
     SUBDIR += rubygem-doorkeeper-openid_connect
     SUBDIR += rubygem-doorkeeper-rails5
     SUBDIR += rubygem-doorkeeper-rails50
@@ -1171,6 +1182,7 @@
     SUBDIR += rubygem-omniauth-gitlab
     SUBDIR += rubygem-omniauth-jwt
     SUBDIR += rubygem-omniauth-multipassword
+    SUBDIR += rubygem-omniauth-multipassword2
     SUBDIR += rubygem-omniauth-oauth2-generic
     SUBDIR += rubygem-omniauth-rails_csrf_protection
     SUBDIR += rubygem-omniauth-saml
@@ -1190,7 +1202,6 @@
     SUBDIR += rubygem-pwned
     SUBDIR += rubygem-pyu-ruby-sasl
     SUBDIR += rubygem-rack-oauth2
-    SUBDIR += rubygem-rack-oauth21
     SUBDIR += rubygem-rasn1
     SUBDIR += rubygem-razorback-scriptNugget
     SUBDIR += rubygem-rbnacl
@@ -1219,7 +1230,6 @@
     SUBDIR += rubygem-ruby-hmac
     SUBDIR += rubygem-ruby-rc4
     SUBDIR += rubygem-ruby-saml
-    SUBDIR += rubygem-ruby-saml115
     SUBDIR += rubygem-safety_net_attestation
     SUBDIR += rubygem-scrypt
     SUBDIR += rubygem-securecompare
@@ -1385,6 +1395,7 @@
     SUBDIR += wolfssl
     SUBDIR += wpa_supplicant
     SUBDIR += wpa_supplicant-devel
+    SUBDIR += wpa_supplicant210
     SUBDIR += wpa_supplicant29
     SUBDIR += xca
     SUBDIR += xhash
