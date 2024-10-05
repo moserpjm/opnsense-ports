@@ -1,5 +1,5 @@
 PORTNAME=	tailscale
-PORTVERSION=	1.74.0
+PORTVERSION=	1.74.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security net-vpn
 
@@ -11,6 +11,8 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	ca_root_nss>0:security/ca_root_nss
+
+GOAMD64=v4
 
 USES=		go:1.22,modules
 
