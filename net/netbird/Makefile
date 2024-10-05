@@ -1,7 +1,7 @@
 PORTNAME=	netbird
 DISTVERSION=	0.30.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=   1
+PORTREVISION=   2
 CATEGORIES=	net security net-vpn
 
 WRKSRC=		${WRKDIR}/netbird-${PORTVERSION}
@@ -13,7 +13,7 @@ WWW=		https://netbird.io/
 LICENSE=        BSD3CLAUSE
 LICENSE_FILE=   ${WRKSRC}/LICENSE
 
-USES=		go:1.22,modules
+USES=		go:1.23,modules
 
 GO_MODULE=	github.com/netbirdio/netbird
 
